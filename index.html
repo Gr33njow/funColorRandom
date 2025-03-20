@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Dégradés</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Preview du dégradé -->
+        <div class="gradient-preview"></div>
+        
+        <div class="controls">
+            <!-- Inputs Couleurs + Orientation -->
+            <div class="color-inputs">
+                <label for="first-color">Couleur 1</label>
+                <input type="color" id="first-color" value="#FFC371">
+                
+                <label for="second-color">Couleur 2</label>
+                <input type="color" id="second-color" value="#FF6D6D">
+            </div>
+            
+            <!-- Contrôle Orientation -->
+            <div class="orientation-control">
+                <label>Orientation: <span id="degree-value">90°</span></label>
+                <input type="range" id="orientation" min="0" max="360" value="90">
+            </div>
+
+            <textarea name="" id="text-to-copy"></textarea>
+            <!-- Boutons Actions -->
+            <div class="btns">
+                <button id="copy" class="btn">Copier CSS</button>
+                <button id="random" class="btn">Aléatoire</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
